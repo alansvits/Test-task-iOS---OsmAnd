@@ -8,51 +8,59 @@
 
 import UIKit
 
+protocol RegionsViewControllerDelegate: class {
+    func regionsViewController(update country: Country)
+}
+
 class RegionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var dataProvider: DataProvider?
-    var selectedCountryName = ""
-    
     
     @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     
+    weak var delegate: RegionsViewControllerDelegate?
+    
+    var selectedCountry: Country! {
+        didSet {
+            selectedCountry.regions?.sort(by: { (a1, a2) -> Bool in
+                a1.name > a2.name
+            })
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setColorStatusBar()
-        setDataProvider()
-        title = dataProvider?.selectedCountry?.name
-        //        memoryUIView.isHidden = true
-        //        dataProvider?.regions.parsedCountries?.forEach { print($0.rawRegions)}
+        title = selectedCountry?.name.capitalized
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        dataProvider?.selectedCountry = dataProvider!.getCountryWith(selectedCountryName)
     }
+
 }
 
-//MARK: - UITableViewDelegate, UITableViewDataSource
+//MARK: - UITableViewDataSource
 extension RegionsViewController {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataProvider!.selectedCountry!.regionNames.count
+        return selectedCountry.regions!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
-        cell.countryNameLabel.text = dataProvider!.selectedCountry?.regionNames[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell else { return UITableViewCell()
+        }
+        cell.countryNameLabel.text = selectedCountry.regions![indexPath.row].name
         cell.downloadImageView.image = UIImage(named: "ic_custom_dowload")
+        cell.isDownloading = selectedCountry.regions![indexPath.row].isDownloading
         return cell
     }
     
+//MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! MainTableViewCell
+        selectedCountry.regions![indexPath.row].toggleDownloading()
         cell.toggleDownloanProgressView()
-        
-        
-        
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
+        delegate?.regionsViewController(update: selectedCountry)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -98,18 +106,6 @@ extension RegionsViewController {
             .constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
-    private func setDataProvider() {
-        if let path = Bundle.main.path(forResource: "region_json", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let decoder = JSONDecoder()
-                let root = try decoder.decode(RootRegion.self, from: data)
-                dataProvider = DataProvider(root)
-            } catch let error {
-                print("parse error: \(error.localizedDescription)")
-            }
-        } else {
-            print("Invalid filename/path.")
-        }
-    }
 }
+
+

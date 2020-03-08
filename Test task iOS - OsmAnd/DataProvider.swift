@@ -8,7 +8,11 @@
 
 import Foundation
 
+
+
 class DataProvider {
+    
+    let continent = "Europe"
     
     let regions: RootRegion
     
@@ -44,24 +48,67 @@ class DataProvider {
                 tmp.append(c)
             }
         }
-        counties = tmp
+        counties = tmp.sorted(by: { (c1, c2) -> Bool in
+            c1.name < c2.name
+        })
     }
     
+    func getCountry(_ name: String) -> Country? {
+        for c in counties {
+            if c.name == name.lowercased() {
+                return c
+            }
+        }
+        return nil
+    }
     
+    func updateCoutries(_ country: Country) {
+        for i in 0..<counties.count {
+            if counties[i].name == country.name {
+                counties[i].updateRegions(country.regions!)
+            }
+        }
+    }
+  
 }
 
 struct Area {
     let name: String
     var isDownloading = false
     let urlStr: String
+    
+    mutating func toggleDownloading() {
+        isDownloading = !isDownloading
+    }
 }
 
 struct Country {
     let name: String
     var isDownloading = false
     var urlStr: String?
-    let regions: [Area]?
+    var regions: [Area]? {
+        didSet {
+            regions!.sort { (a, b) -> Bool in
+                a.name > b.name
+            }
+        }
+    }
     var isDownloaded = false
+    
+    var hasArea: Bool {
+        regions == nil ? false: true
+    }
+    
+    
+    mutating func toggleDownloading() {
+        isDownloading = !isDownloading
+    }
+    
+    mutating func updateRegions(_ regions: [Area]) {
+        for i in 0..<self.regions!.count {
+            self.regions![i].isDownloading = regions[i].isDownloading
+        }
+    }
     
 }
 
