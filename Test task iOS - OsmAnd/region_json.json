@@ -1,0 +1,2108 @@
+{
+   "region": [
+      {
+         "region": [
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "capital-region",
+                     "_translate": "name:en=Capital Region of Denmark;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "central-region",
+                     "_translate": "name:en=Central Denmark Region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "north-region",
+                     "_translate": "name:en=North Denmark Region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "southern-region",
+                     "_translate": "name:en=Region of Southern Denmark;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "zealand-region",
+                     "_translate": "name:en=Region Zealand;entity=relation"
+                  }
+               ],
+               "_name": "denmark",
+               "_lang": "da",
+               "_poly_extract": "north-europe",
+               "_inner_download_prefix": "$name",
+               "_join_map_files": "yes"
+            },
+            {
+               "_name": "estonia",
+               "_lang": "et",
+               "_poly_extract": "north-europe"
+            },
+            {
+               "_name": "iceland",
+               "_lang": "is",
+               "_poly_extract": "north-europe"
+            },
+            {
+               "_name": "faroe-islands",
+               "_translate": "Faroe Islands;entity=node",
+               "_lang": "fo",
+               "_poly_extract": "north-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_map": "yes",
+                     "_name": "aland",
+                     "_translate": "name:fi=Ahvenanmaa;admin_level=3;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_name": "eastern-finland",
+                     "_translate": "Eastern Finland;entity=relation"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "srtm",
+                           "_name": "lapland",
+                           "_translate": "Lapland;entity=relation"
+                        },
+                        {
+                           "_type": "srtm",
+                           "_name": "northern-ostrobothnia",
+                           "_translate": "name:en=Northern Ostrobothnia;entity=relation"
+                        }
+                     ],
+                     "_name": "northern-finland",
+                     "_map": "yes",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Northern Finland;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_name": "southern-finland",
+                     "_translate": "Southern Finland;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_name": "western-finland",
+                     "_translate": "Western Finland;entity=relation"
+                  }
+               ],
+               "_name": "finland",
+               "_inner_download_prefix": "$name",
+               "_srtm": "no",
+               "_lang": "fi,sv",
+               "_poly_extract": "north-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "_name": "latvia",
+               "_lang": "lv",
+               "_poly_extract": "north-europe"
+            },
+            {
+               "_name": "lithuania",
+               "_lang": "lt",
+               "_poly_extract": "north-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "akershus",
+                     "_translate": "Akershus;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "astfold",
+                     "_translate": "Østfold;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "aust-agder",
+                     "_translate": "name:en=East Agder;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "buskerud",
+                     "_translate": "Buskerud;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "finnmark",
+                     "_translate": "Finnmark;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "hedmark",
+                     "_translate": "Hedmark;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "hordaland",
+                     "_translate": "Hordaland;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "more-og-romsdal",
+                     "_translate": "Møre og Romsdal;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "nordland",
+                     "_translate": "Nordland;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "oppland",
+                     "_translate": "Oppland;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "oslo",
+                     "_translate": "Oslo;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "rogaland",
+                     "_translate": "Rogaland;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "sogn-og-fjordane",
+                     "_translate": "Sogn og Fjordane;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "trondelag",
+                     "_translate": "Trøndelag;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "telemark",
+                     "_translate": "Telemark;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "troms",
+                     "_translate": "Troms;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vest-agder",
+                     "_translate": "name:en=West Agder;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vestfold",
+                     "_translate": "Vestfold;entity=relation"
+                  },
+                  {
+                     "_name": "svalbard-and-jan-mayen",
+                     "_translate": "Svalbard;entity=relation"
+                  }
+               ],
+               "_name": "norway",
+               "_srtm": "no",
+               "_inner_download_prefix": "$name",
+               "_lang": "nb,nn",
+               "_poly_extract": "north-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "blekinge",
+                     "_translate": "Blekinge län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "dalarna",
+                     "_translate": "Dalecarlia;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "gavleborg",
+                     "_translate": "Gävleborgs län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "gotland",
+                     "_translate": "Gotlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "halland",
+                     "_translate": "Hallands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "jamtland",
+                     "_translate": "Jämtlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "jonkoping",
+                     "_translate": "Jönköpings län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "kalmar",
+                     "_translate": "Kalmar län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "kronoberg",
+                     "_translate": "Kronobergs län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "norrbotten",
+                     "_translate": "Norrbottens län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "orebro",
+                     "_translate": "Örebro län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "ostergotland",
+                     "_translate": "Östergötlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "skane",
+                     "_translate": "Skåne län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "sodermanland",
+                     "_translate": "Södermanlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "stockholm",
+                     "_translate": "Stockholms län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "uppsala",
+                     "_translate": "Uppsala län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "varmland",
+                     "_translate": "Värmlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vasterbotten",
+                     "_translate": "Västerbottens län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vasternorrland",
+                     "_translate": "Västernorrlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vastmanland",
+                     "_translate": "Västmanlands län;entity=relation"
+                  },
+                  {
+                     "_map": "yes",
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "vastra-gotaland",
+                     "_translate": "Västra Götalands län;entity=relation"
+                  }
+               ],
+               "_name": "sweden",
+               "_inner_download_prefix": "$name",
+               "_srtm": "no",
+               "_lang": "sv",
+               "_poly_extract": "north-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "brest",
+                     "_translate": "name:en=Brest Region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "gomel",
+                     "_translate": "name:en=Homel region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "hrodna",
+                     "_translate": "name:en=Hrodna Region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "magilyow",
+                     "_translate": "name:en=Mahilyow Region;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "minsk",
+                     "_translate": "name:en=Minsk;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "vitebsk",
+                     "_translate": "name:en=Vitsebsk Region;entity=relation"
+                  }
+               ],
+               "_name": "belarus",
+               "_lang": "be,ru",
+               "_poly_extract": "east-europe",
+               "_inner_download_prefix": "$name",
+               "_join_map_files": "yes",
+               "_translate": "name:en=Belarus;entity=relation"
+            },
+            {
+               "_name": "bulgaria",
+               "_lang": "bg",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "jihovychod",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Southeast;ref=CZ06;entity=relation"
+                  },
+                  {
+                     "_name": "jihozapad",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Southwest;ref=CZ03;entity=relation"
+                  },
+                  {
+                     "_name": "moravskoslezsko",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Moravia-Silesia;entity=relation"
+                  },
+                  {
+                     "_name": "praha",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Prague;entity=relation"
+                  },
+                  {
+                     "_name": "severovychod",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Northeast;ref=CZ05;entity=relation"
+                  },
+                  {
+                     "_name": "severozapad",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Northwest;ref=CZ04;entity=relation"
+                  },
+                  {
+                     "_name": "stredni-cechy",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Central Bohemia;entity=relation"
+                  },
+                  {
+                     "_name": "stredni-morava",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Central Moravia;entity=relation"
+                  }
+               ],
+               "_name": "czech-republic",
+               "_inner_download_prefix": "$name",
+               "_translate": "name:en=Czechia;entity=relation",
+               "_lang": "cs,sk",
+               "_poly_extract": "east-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "_name": "hungary",
+               "_lang": "hu",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "_name": "moldova",
+               "_lang": "ro",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "greater-poland",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Greater Poland;entity=node"
+                  },
+                  {
+                     "_name": "kuyavian-pomeranian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Kuyavian-Pomerania;entity=node"
+                  },
+                  {
+                     "_name": "lesser-poland",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Lesser Poland;entity=node"
+                  },
+                  {
+                     "_name": "lodz",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Łódź;entity=node"
+                  },
+                  {
+                     "_name": "lower-silesian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Lower Silesia;entity=node"
+                  },
+                  {
+                     "_name": "lublin",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Lublin Voivodeship;entity=relation"
+                  },
+                  {
+                     "_name": "lubusz",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no"
+                  },
+                  {
+                     "_name": "masovian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Masovia;entity=node"
+                  },
+                  {
+                     "_name": "opole",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Opole Voivodeship;entity=node"
+                  },
+                  {
+                     "_name": "podlachian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Podlachia;entity=node"
+                  },
+                  {
+                     "_name": "pomeranian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Pomerania;entity=node"
+                  },
+                  {
+                     "_name": "silesian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Silesia;entity=node"
+                  },
+                  {
+                     "_name": "subcarpathian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Subcarpathia;entity=node"
+                  },
+                  {
+                     "_name": "swietokrzyskie",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Holy Cross;entity=node"
+                  },
+                  {
+                     "_name": "warmian-masurian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "Warmian-Masurian Voivodeship;entity=node"
+                  },
+                  {
+                     "_name": "west-pomeranian",
+                     "_srtm": "no",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_translate": "West Pomerania;entity=node"
+                  }
+               ],
+               "_name": "poland",
+               "_inner_download_prefix": "$name",
+               "_lang": "pl",
+               "_poly_extract": "east-europe",
+               "_map": "no",
+               "_roads": "yes",
+               "_join_map_files": "yes"
+            },
+            {
+               "_name": "romania",
+               "_lang": "ro",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "_name": "slovakia",
+               "_lang": "sk",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "_name": "transnistria",
+               "_hillshade": "no",
+               "_lang": "ru,uk,ro",
+               "_poly_extract": "east-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "cherkasy",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Cherkasy Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "chernihiv",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Chernihiv Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "chernivtsi",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Chernivtsi Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "crimea",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_boundary": "ukraine/crimea",
+                     "_translate": "name:en=Autonomous Republic of Crimea;entity=relation"
+                  },
+                  {
+                     "_name": "dnipropetrovsk",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Dnipropetrovsk Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "donetsk",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Donetsk Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "ivano-frankivsk",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Ivano-Frankivsk Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "kharkiv",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Kharkiv Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "kherson",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Kherson Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "khmelnytskyy",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Khmelnytskyi Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "kiev",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Kyiv Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "kiev-city",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Kyiv;entity=relation"
+                  },
+                  {
+                     "_name": "kirovohrad",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Kirovohrad Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "luhansk",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Luhansk Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "lviv",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Lviv Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "mykolayiv",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Mykolaiv Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "odessa",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Odesa Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "poltava",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Poltava Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "rivne",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Rivne Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "sumy",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Sumy Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "ternopil",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Ternopil Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "transcarpathia",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Zakarpattia Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "vinnytsya",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Vinnytsia Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "volyn",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Volyn Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "zaporizhzhya",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Zaporizhia Oblast;entity=relation"
+                  },
+                  {
+                     "_name": "zhytomyr",
+                     "_hillshade": "no",
+                     "_srtm": "no",
+                     "_wiki": "no",
+                     "_translate": "name:en=Zhytomyr Oblast;entity=relation"
+                  }
+               ],
+               "_name": "ukraine",
+               "_inner_download_prefix": "$name",
+               "_lang": "uk,ru",
+               "_poly_extract": "east-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "_name": "albania",
+               "_lang": "sq",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "andorra",
+               "_lang": "ca",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "azores",
+               "_translate": "Azores;entity=relation",
+               "_hillshade": "no",
+               "_lang": "pt",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "bosnia-herzegovina",
+               "_translate": "Bosnia and Herzegovina;entity=node",
+               "_lang": "bs,hr,sr",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "croatia",
+               "_lang": "hr",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "cyprus",
+               "_translate": "name:en=Cyprus;entity=node",
+               "_lang": "el,tr",
+               "_left_hand_navigation": "yes",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "greece",
+               "_lang": "el",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "abruzzo",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "basilicata",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "calabria",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "campania",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "emilia-romagna",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "friuli-venezia-giulia",
+                     "_translate": "Friuli Venezia Giulia;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "lazio",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "liguria",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "lombardia",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "marche",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "molise",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "piemonte",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "puglia",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "sardegna",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "sicilia",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "toscana",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "trentino-alto-adige",
+                     "_translate": "Trentino-Alto Adige/Südtirol;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "umbria",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "valle-aosta",
+                     "_translate": "Valle d'Aosta;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "veneto",
+                     "_hillshade": "no"
+                  }
+               ],
+               "_name": "italy",
+               "_map": "no",
+               "_inner_download_prefix": "$name",
+               "_lang": "it",
+               "_poly_extract": "south-europe",
+               "_join_road_files": "yes"
+            },
+            {
+               "_name": "kosovo",
+               "_translate": "name:en=Kosovo;entity=relation",
+               "_lang": "sq,sr",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "macedonia",
+               "_lang": "mk",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "malta",
+               "_translate": "name:en=Malta;admin_level=2;entity=relation",
+               "_lang": "mt,en",
+               "_left_hand_navigation": "yes",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "montenegro",
+               "_lang": "sr,bs,hr,sq",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "portugal",
+               "_translate": "name:en=Portugal;entity=relation",
+               "_lang": "pt",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "san-marino",
+               "_translate": "San Marino;entity=node",
+               "_lang": "it",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "serbia",
+               "_lang": "sr",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "_name": "slovenia",
+               "_lang": "sl",
+               "_poly_extract": "south-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "andalusia",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "aragon",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "asturias",
+                     "_translate": "Asturias;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "baleares",
+                     "_translate": "Balearic Islands;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "basque-country",
+                     "_translate": "Basque Country;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "canarias",
+                     "_translate": "Canary Islands;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "cantabria",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "castilla-la-mancha",
+                     "_translate": "Castile-La Mancha;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "castilla-leon",
+                     "_translate": "Castile and León;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "catalunya",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "ceuta",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "extremadura",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "galicia",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "madrid",
+                     "_translate": "Community of Madrid;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "melilla",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "murcia",
+                     "_translate": "Region of Murcia;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "navarra",
+                     "_translate": "name:en=Navarre;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "rioja",
+                     "_translate": "Rioja;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "valencia",
+                     "_translate": "Valencian Community;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_type": "hillshade",
+                     "_name": "gibraltar",
+                     "_translate": "name:en=Gibraltar;entity=relation",
+                     "_boundary": "no"
+                  }
+               ],
+               "_name": "spain",
+               "_inner_download_prefix": "$name",
+               "_srtm": "no",
+               "_lang": "es,ca,gl,eu",
+               "_poly_extract": "south-europe",
+               "_join_road_files": "yes",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "aegean",
+                     "_translate": "name:en=Aegean Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "black-sea",
+                     "_translate": "name:en=Black Sea Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "central-anatolia",
+                     "_translate": "name:en=Central Anatolia Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "eastern-anatolia",
+                     "_translate": "name:en=Eastern Anatolia Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "marmara",
+                     "_translate": "name:en=Marmara Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "mediterranean",
+                     "_translate": "name:en=Mediterranean Region;entity=relation"
+                  },
+                  {
+                     "_srtm": "yes",
+                     "_hillshade": "no",
+                     "_wiki": "no",
+                     "_name": "southeastern-anatolia",
+                     "_translate": "name:en=Southeastern Anatolia Region;entity=relation"
+                  }
+               ],
+               "_name": "turkey",
+               "_inner_download_prefix": "$name",
+               "_srtm": "no",
+               "_lang": "tr",
+               "_poly_extract": "south-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "burgenland"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "carinthia"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "lower-austria",
+                     "_translate": "name:en=Lower Austria;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "salzburg"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "styria"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "tyrol"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "upper-austria",
+                     "_translate": "name:en=Upper Austria;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "vorarlberg"
+                  }
+               ],
+               "_name": "austria",
+               "_inner_download_prefix": "$name",
+               "_lang": "de",
+               "_poly_extract": "west-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "flanders",
+                     "_translate": "name:en=Flanders;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "wallonia",
+                     "_translate": "name:en=Wallonia;entity=relation"
+                  }
+               ],
+               "_name": "belgium",
+               "_lang": "nl,fr,de",
+               "_inner_download_prefix": "$name",
+               "_poly_extract": "west-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "corse",
+                     "_hillshade": "no",
+                     "_translate": "name:en=Corsica;entity=relation"
+                  },
+                  {
+                     "_name": "ile-de-france",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "pays-de-la-loire",
+                     "_translate": "name:en=Pays de la Loire;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "provence-alpes-cote-d-azur",
+                     "_translate": "Provence-Alpes-Côte d'Azur;entity=node",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "ain",
+                           "_translate": "Ain;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "allier",
+                           "_translate": "Allier;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "ardeche",
+                           "_translate": "Ardèche;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "cantal",
+                           "_translate": "Cantal;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "drome",
+                           "_translate": "Drôme;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "haute-loire",
+                           "_translate": "Haute-Loire;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "isere",
+                           "_translate": "Isère;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "loire",
+                           "_translate": "Loire;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "lyon",
+                           "_translate": "Métropole de Lyon;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "puy-de-dome",
+                           "_translate": "Puy-de-Dôme;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "savoy",
+                           "_translate": "Savoie;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "upper-savoy",
+                           "_translate": "Haute-Savoie;entity=relation"
+                        }
+                     ],
+                     "_name": "auvergne-rhone-alpes",
+                     "_translate": "Auvergne-Rhône-Alpes;entity=relation",
+                     "_inner_download_prefix": "france_auvergne-rhone-alpes",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "bourgogne-franche-comte",
+                     "_translate": "Bourgogne-Franche-Comté;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "brittany",
+                     "_translate": "name:en=Brittany;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "centre-loire-valley",
+                     "_translate": "name:en=Centre-Loire Valley;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "ardennes",
+                           "_translate": "Ardennes;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "aube",
+                           "_translate": "Aube;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "bas-rhin",
+                           "_translate": "Bas-Rhin;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "haute-marne",
+                           "_translate": "Haute-Marne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "haut-rhin",
+                           "_translate": "Haut-Rhin;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "marne",
+                           "_translate": "Marne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "meurthe-et-moselle",
+                           "_translate": "Meurthe-et-Moselle;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "meuse",
+                           "_translate": "Meuse;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "moselle",
+                           "_translate": "Moselle;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "vosges",
+                           "_translate": "Vosges;entity=relation"
+                        }
+                     ],
+                     "_name": "great-east",
+                     "_inner_download_prefix": "france_great-east",
+                     "_translate": "name:en=Grand Est;entity=relation",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "hauts-de-france",
+                     "_translate": "name=Hauts-de-France;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "charente",
+                           "_translate": "Charente;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "charente-maritime",
+                           "_translate": "Charente-Maritime;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "correze",
+                           "_translate": "Corrèze;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "creuse",
+                           "_translate": "Creuse;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "deux-sevres",
+                           "_translate": "Deux-Sèvres;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "dordogne",
+                           "_translate": "Dordogne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "gironde",
+                           "_translate": "Gironde;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "haute-vienne",
+                           "_translate": "Haute-Vienne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "landes",
+                           "_translate": "Landes;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "lot-et-garonne",
+                           "_translate": "Lot-et-Garonne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "pyrenees-atlantiques",
+                           "_translate": "Pyrénées-Atlantiques;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "vienne",
+                           "_translate": "Vienne;entity=relation"
+                        }
+                     ],
+                     "_name": "new-aquitaine",
+                     "_inner_download_prefix": "france_new-aquitaine",
+                     "_translate": "name:en=New Aquitaine;entity=relation",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "normandy",
+                     "_translate": "name:en=Normandy;entity=relation",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "ariege",
+                           "_translate": "Ariège;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "aude",
+                           "_translate": "Aude;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "aveyron",
+                           "_translate": "Aveyron;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "gard",
+                           "_translate": "Gard;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "gers",
+                           "_translate": "Gers;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "haute-garonne",
+                           "_translate": "Haute-Garonne;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "hautes-pyrenees",
+                           "_translate": "Hautes-Pyrénées;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "herault",
+                           "_translate": "Hérault;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "lot",
+                           "_translate": "Lot;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "lozere",
+                           "_translate": "Lozère;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "pyrenees-orientales",
+                           "_translate": "Pyrénées-Orientales;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "tarn",
+                           "_translate": "Tarn;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "tarn-et-garonne",
+                           "_translate": "Tarn-et-Garonne;entity=relation"
+                        }
+                     ],
+                     "_name": "occitania",
+                     "_inner_download_prefix": "france_occitania",
+                     "_translate": "name:en=Occitania;entity=relation",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  }
+               ],
+               "_name": "france",
+               "_inner_download_prefix": "$name",
+               "_srtm": "no",
+               "_map": "no",
+               "_roads": "yes",
+               "_lang": "fr",
+               "_poly_extract": "france",
+               "_join_road_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "freiburg",
+                           "_translate": "name=Regierungsbezirk Freiburg;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "karlsruhe",
+                           "_translate": "name=Regierungsbezirk Karlsruhe;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "stuttgart",
+                           "_translate": "name=Regierungsbezirk Stuttgart;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "tubingen",
+                           "_translate": "name=Regierungsbezirk Tübingen;entity=relation"
+                        }
+                     ],
+                     "_name": "baden-wuerttemberg",
+                     "_inner_download_prefix": "germany_baden-wuerttemberg",
+                     "_translate": "Baden-Württemberg;entity=node",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "lower-bavaria",
+                           "_translate": "name:en=Lower Bavaria;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "lower-franconia",
+                           "_translate": "name:en=Lower Franconia;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "middle-franconia",
+                           "_translate": "name:en=Middle Franconia;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "swabia",
+                           "_translate": "name:en=Swabia;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "upper-bavaria",
+                           "_translate": "name:en=Upper Bavaria;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "upper-franconia",
+                           "_translate": "name:en=Upper Franconia;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "upper-palatinate",
+                           "_translate": "name:en=Upper Palatinate;entity=relation"
+                        }
+                     ],
+                     "_name": "bayern",
+                     "_inner_download_prefix": "germany_bayern",
+                     "_hillshade": "no",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "berlin",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "brandenburg",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "hamburg",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "darmstadt",
+                           "_translate": "Regierungsbezirk Darmstadt;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "giessen",
+                           "_translate": "Regierungsbezirk Gießen;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "kassel",
+                           "_translate": "Regierungsbezirk Kassel;entity=relation"
+                        }
+                     ],
+                     "_name": "hessen",
+                     "_hillshade": "no",
+                     "_inner_download_prefix": "germany_hessen",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "mecklenburg-vorpommern",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "braunschweig"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "buchholz-in-der-nordheide",
+                           "_translate": "Buchholz in der Nordheide;entity=node"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "hannover"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "oldenburg"
+                        },
+                        {
+                           "_name": "bremen",
+                           "_translate": "Free and Hanseatic City of Bremen;entity=node",
+                           "_boundary": "germany/bremen"
+                        }
+                     ],
+                     "_name": "niedersachsen",
+                     "_hillshade": "no",
+                     "_inner_download_prefix": "germany_niedersachsen",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_type": "map",
+                           "_name": "cologne-government-region",
+                           "_translate": "name:en=Cologne Government Region;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "arnsberg",
+                           "_translate": "name=Regierungsbezirk Arnsberg;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "detmold",
+                           "_translate": "name=Regierungsbezirk Detmold;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "dusseldorf",
+                           "_translate": "name=Regierungsbezirk Düsseldorf;entity=relation"
+                        },
+                        {
+                           "_type": "map",
+                           "_name": "munster",
+                           "_translate": "name=Regierungsbezirk Münster;entity=relation"
+                        }
+                     ],
+                     "_name": "nordrhein-westfalen",
+                     "_hillshade": "no",
+                     "_inner_download_prefix": "germany_nordrhein_westfalen",
+                     "_join_map_files": "yes"
+                  },
+                  {
+                     "_name": "rheinland-pfalz",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "saarland",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "sachsen",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "sachsen-anhalt",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "schleswig-holstein",
+                     "_hillshade": "no"
+                  },
+                  {
+                     "_name": "thueringen",
+                     "_translate": "Thuringia;entity=node",
+                     "_hillshade": "no"
+                  }
+               ],
+               "_name": "germany",
+               "_inner_download_prefix": "$name",
+               "_map": "no",
+               "_roads": "yes",
+               "_lang": "de",
+               "_poly_extract": "germany"
+            },
+            {
+               "region": [
+                  {
+                     "_name": "scotland",
+                     "_hillshade": "no",
+                     "_poly_extract": "west-europe"
+                  },
+                  {
+                     "_name": "wales",
+                     "_hillshade": "no",
+                     "_poly_extract": "west-europe"
+                  },
+                  {
+                     "_name": "northern_ireland",
+                     "_translate": "Northern Ireland;entity=relation",
+                     "_hillshade": "no",
+                     "_poly_extract": "west-europe"
+                  },
+                  {
+                     "region": [
+                        {
+                           "_name": "east-midlands",
+                           "_translate": "East Midlands;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "east-of-england",
+                           "_translate": "East of England;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "north-east-england",
+                           "_translate": "North East England;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "north-west-england",
+                           "_translate": "North West England;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "south-east-england",
+                           "_translate": "South East;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "south-west-england",
+                           "_translate": "South West England;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "west-midlands",
+                           "_translate": "West Midlands;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "yorkshire-and-the-humber",
+                           "_translate": "Yorkshire and the Humber;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "region": [
+                              {
+                                 "_name": "jersey",
+                                 "_map": "no"
+                              },
+                              {
+                                 "_name": "guernsey",
+                                 "_translate": "Guernsey;admin_level=2;entity=relation",
+                                 "_map": "no",
+                                 "_hillshade": "no"
+                              }
+                           ],
+                           "_name": "channel-islands",
+                           "_translate": "=Channel Islands",
+                           "_hillshade": "no"
+                        },
+                        {
+                           "_name": "greater-london",
+                           "_translate": "Greater London;entity=relation",
+                           "_srtm": "no",
+                           "_hillshade": "no"
+                        }
+                     ],
+                     "_name": "england",
+                     "_translate": "England;entity=relation",
+                     "_inner_download_prefix": "gb_england",
+                     "_hillshade": "no",
+                     "_poly_extract": "west-europe",
+                     "_join_map_files": "yes"
+                  }
+               ],
+               "_name": "gb",
+               "_translate": "United Kingdom;entity=relation",
+               "_boundary": "no",
+               "_map": "no",
+               "_hillshade": "yes",
+               "_srtm": "no",
+               "_inner_download_prefix": "$name",
+               "_lang": "en",
+               "_metric": "miles",
+               "_left_hand_navigation": "yes"
+            },
+            {
+               "_name": "ireland",
+               "_lang": "ga,en",
+               "_translate": "name:en=Ireland;entity=node",
+               "_poly_extract": "west-europe",
+               "_left_hand_navigation": "yes"
+            },
+            {
+               "_name": "isle-of-man",
+               "_translate": "Isle of Man;entity=relation",
+               "_lang": "en,gv",
+               "_poly_extract": "west-europe"
+            },
+            {
+               "_name": "liechtenstein",
+               "_translate": "Liechtenstein;entity=relation",
+               "_lang": "de",
+               "_poly_extract": "west-europe"
+            },
+            {
+               "_name": "luxembourg",
+               "_lang": "fr,de,lb",
+               "_poly_extract": "west-europe"
+            },
+            {
+               "_name": "monaco",
+               "_translate": "Monaco;border_type=nation;entity=relation",
+               "_lang": "fr",
+               "_poly_extract": "west-europe"
+            },
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "drenthe",
+                     "_translate": "Drenthe;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "flevoland",
+                     "_translate": "Flevoland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "friesland",
+                     "_translate": "Friesland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "gelderland",
+                     "_translate": "Gelderland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "groningen",
+                     "_translate": "Groningen;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "limburg",
+                     "_translate": "Limburg;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "noord-brabant",
+                     "_translate": "Noord-Brabant;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "noord-holland",
+                     "_translate": "Noord-Holland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "overijssel",
+                     "_translate": "Overijssel;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "utrecht",
+                     "_translate": "Utrecht;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "zeeland",
+                     "_translate": "Zeeland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "zuid-holland",
+                     "_translate": "Zuid-holland;entity=relation"
+                  }
+               ],
+               "_name": "netherlands",
+               "_inner_download_prefix": "$name",
+               "_translate": "Nederland;entity=relation",
+               "_lang": "nl",
+               "_poly_extract": "west-europe",
+               "_join_map_files": "yes"
+            },
+            {
+               "region": [
+                  {
+                     "_type": "map",
+                     "_name": "basel"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "bern"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "central",
+                     "_translate": "Central;is_in:country=Switzerland;entity=node",
+                     "_boundary": "switzerland/central"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "eastern",
+                     "_translate": "Eastern;is_in:country=Switzerland;entity=node"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "lake-geneva",
+                     "_translate": "Lac Léman;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "ticino",
+                     "_translate": "Ticino;is_in:country=Switzerland;entity=relation"
+                  },
+                  {
+                     "_type": "map",
+                     "_name": "zurich",
+                     "_translate": "Zürich;entity=relation"
+                  }
+               ],
+               "_name": "switzerland",
+               "_inner_download_prefix": "$name",
+               "_lang": "de,fr,it",
+               "_poly_extract": "west-europe",
+               "_join_map_files": "yes"
+            }
+         ],
+         "_type": "continent",
+         "_name": "europe",
+         "_translate": "=Europe",
+         "_inner_download_suffix": "europe",
+         "_boundary": "no",
+         "_poly_extract": "europe"
+      },
+      {
+         "_name": "World_basemap",
+         "_type": "map",
+         "_roads": "no",
+         "_wiki": "no",
+         "_boundary": "no",
+         "_translate": "=World basemap"
+      },
+      {
+         "_name": "World_seamarks",
+         "_type": "map",
+         "_roads": "no",
+         "_wiki": "no",
+         "_boundary": "no",
+         "_translate": "=World seamarks"
+      }
+   ]
+}

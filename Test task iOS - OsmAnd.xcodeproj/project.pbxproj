@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		647A212A2413BFAD00F2F3E9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A21292413BFAD00F2F3E9 /* Helpers.swift */; };
+		647A212C2413BFE900F2F3E9 /* region_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 647A212B2413BFE900F2F3E9 /* region_json.json */; };
+		647A212E2413C23A00F2F3E9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A212D2413C23A00F2F3E9 /* DataProvider.swift */; };
+		647A21322413E37D00F2F3E9 /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A21312413E37D00F2F3E9 /* RegionsViewController.swift */; };
+		647ECF5B2414C1AC00D26BA1 /* MemoryProgresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */; };
 		6482744424137FD800578441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482744324137FD800578441 /* AppDelegate.swift */; };
-		6482744624137FD800578441 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482744524137FD800578441 /* SceneDelegate.swift */; };
-		6482744824137FD800578441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482744724137FD800578441 /* ViewController.swift */; };
-		6482744B24137FD800578441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6482744924137FD800578441 /* Main.storyboard */; };
 		6482744D24137FDE00578441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6482744C24137FDE00578441 /* Assets.xcassets */; };
 		6482745024137FDE00578441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6482744E24137FDE00578441 /* LaunchScreen.storyboard */; };
+		6482745824138BB100578441 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482745724138BB100578441 /* Extentions.swift */; };
+		64830AAA2413B8E50007E048 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64830AA92413B8E50007E048 /* MainTableViewCell.swift */; };
+		64A4472B2413AD2000744EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A447292413AD2000744EB0 /* Main.storyboard */; };
+		64A4472D2413AD8D00744EB0 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4472C2413AD8D00744EB0 /* CountryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		647A21292413BFAD00F2F3E9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		647A212B2413BFE900F2F3E9 /* region_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = region_json.json; sourceTree = "<group>"; };
+		647A212D2413C23A00F2F3E9 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		647A21312413E37D00F2F3E9 /* RegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
+		647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryProgresView.swift; sourceTree = "<group>"; };
 		6482744024137FD800578441 /* Test task iOS - OsmAnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task iOS - OsmAnd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6482744324137FD800578441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6482744524137FD800578441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6482744724137FD800578441 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6482744A24137FD800578441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6482744C24137FDE00578441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6482744F24137FDE00578441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6482745124137FDE00578441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6482745724138BB100578441 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		64830AA92413B8E50007E048 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		64A4472A2413AD2000744EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64A4472C2413AD8D00744EB0 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				6482744324137FD800578441 /* AppDelegate.swift */,
-				6482744524137FD800578441 /* SceneDelegate.swift */,
-				6482744724137FD800578441 /* ViewController.swift */,
-				6482744924137FD800578441 /* Main.storyboard */,
+				64A4472C2413AD8D00744EB0 /* CountryViewController.swift */,
+				647A21312413E37D00F2F3E9 /* RegionsViewController.swift */,
+				64830AA92413B8E50007E048 /* MainTableViewCell.swift */,
 				6482744C24137FDE00578441 /* Assets.xcassets */,
+				64A447292413AD2000744EB0 /* Main.storyboard */,
 				6482744E24137FDE00578441 /* LaunchScreen.storyboard */,
 				6482745124137FDE00578441 /* Info.plist */,
+				647A212B2413BFE900F2F3E9 /* region_json.json */,
+				6482745724138BB100578441 /* Extentions.swift */,
+				647A21292413BFAD00F2F3E9 /* Helpers.swift */,
+				647A212D2413C23A00F2F3E9 /* DataProvider.swift */,
+				647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */,
 			);
 			path = "Test task iOS - OsmAnd";
 			sourceTree = "<group>";
@@ -125,9 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A4472B2413AD2000744EB0 /* Main.storyboard in Resources */,
+				647A212C2413BFE900F2F3E9 /* region_json.json in Resources */,
 				6482745024137FDE00578441 /* LaunchScreen.storyboard in Resources */,
 				6482744D24137FDE00578441 /* Assets.xcassets in Resources */,
-				6482744B24137FD800578441 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +157,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6482744824137FD800578441 /* ViewController.swift in Sources */,
+				647ECF5B2414C1AC00D26BA1 /* MemoryProgresView.swift in Sources */,
+				647A21322413E37D00F2F3E9 /* RegionsViewController.swift in Sources */,
+				647A212E2413C23A00F2F3E9 /* DataProvider.swift in Sources */,
+				64A4472D2413AD8D00744EB0 /* CountryViewController.swift in Sources */,
+				6482745824138BB100578441 /* Extentions.swift in Sources */,
+				64830AAA2413B8E50007E048 /* MainTableViewCell.swift in Sources */,
+				647A212A2413BFAD00F2F3E9 /* Helpers.swift in Sources */,
 				6482744424137FD800578441 /* AppDelegate.swift in Sources */,
-				6482744624137FD800578441 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6482744924137FD800578441 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6482744A24137FD800578441 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6482744E24137FDE00578441 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6482744F24137FDE00578441 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64A447292413AD2000744EB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A4472A2413AD2000744EB0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -211,12 +235,13 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -265,12 +290,13 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +312,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Test task iOS - OsmAnd/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stasshetko.Test-task-iOS---OsmAnd";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test task iOS - OsmAnd";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,14 +330,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Test task iOS - OsmAnd/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stasshetko.Test-task-iOS---OsmAnd";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test task iOS - OsmAnd";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
