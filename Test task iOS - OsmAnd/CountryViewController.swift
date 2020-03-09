@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 class CountryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var dataProvider: DataProvider?
     
     @IBOutlet weak var freeGbLabel: UILabel!
     @IBOutlet weak var freeMemoryProgressView: UIProgressView!
     @IBOutlet weak var memoryUIView: UIView!
     @IBOutlet weak var tableViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
+    
+    var dataProvider: DataProvider?
+    var session: URLSession!
+    
+    var downnload: DownloadRequest?
+    
+    var downloadQueue = [Country]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +31,47 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         setMemoryProgressView()
         setFreeGbLabel()
         
-        if memoryUIView.isHidden == true {
-            tableViewTopConstraint = tableView.topAnchor.constraint(equalTo: view.topAnchor)
-            tableViewTopConstraint.isActive = true
+        session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
+    }
+    
+    func downloadSequentially() {
+        
+        if !downloadQueue.isEmpty && downnload == nil {
+            var c = downloadQueue.removeFirst()
+            print(c.url!)
+            
+            c.isDownloading = true
+            self.dataProvider?.updateCoutries(c)
+            
+            let destination: DownloadRequest.Destination = { _, _ in
+                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                let fileURL = documentsURL.appendingPathComponent(c.urlStr!)
+                print(fileURL)
+                return (fileURL, [.removePreviousFile])
+            }
+            c.isDownloading = true
+            downnload = AF.download(c.url!, to: destination).downloadProgress { progress in
+                c.downloadingProgress = Float(progress.fractionCompleted)
+                self.dataProvider?.updateCoutries(c)
+                self.tableView.reloadData()
+                print("Download Progress: \(progress.fractionCompleted)")
+            }.responseData { (r) in
+                c.isDownloaded = true
+                c.isDownloading = false
+                c.isInQueue = false
+                self.dataProvider?.updateCoutries(c)
+                self.tableView.reloadData()
+                print(#function)
+                print(self.downloadQueue.count)
+                self.downnload = nil
+                self.setMemoryProgressView()
+                self.setFreeGbLabel()
+                self.downloadSequentially()
+            }
         }
     }
 }
+
 
 //MARK: - RegionsViewControllerDelegate
 extension CountryViewController: RegionsViewControllerDelegate {
@@ -38,6 +79,22 @@ extension CountryViewController: RegionsViewControllerDelegate {
         dataProvider?.updateCoutries(country)
     }
 }
+
+extension CountryViewController: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        
+    }
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        print(#function)
+        print("totalBytesExpectedToWrite")
+        print(totalBytesExpectedToWrite)
+        print("totalBytesWritten")
+        
+        print(totalBytesWritten)
+    }
+}
+
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
 
@@ -54,28 +111,43 @@ extension CountryViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell,
             let dataProvider = dataProvider else { return UITableViewCell() }
         cell.countryNameLabel.text = dataProvider.counties[indexPath.row].name
-        cell.isDownloading = dataProvider.counties[indexPath.row].isDownloading
+        cell.isDownloading = dataProvider.counties[indexPath.row].isInQueue
+        cell.downloadProgressView.progress = dataProvider.counties[indexPath.row].downloadingProgress
         if dataProvider.counties[indexPath.row].hasArea {
             cell.downloadImageView.image = UIImage(named: "ic_custom_chevron")
+        } else if dataProvider.counties[indexPath.row].isDownloaded {
+            cell.downloadImageView.image = UIImage(named: "ic_custom_dowload_green")
         } else {
             cell.downloadImageView.image = UIImage(named: "ic_custom_dowload")
         }
         return cell
     }
-//MARK: - UITableViewDelegate
+    //MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if dataProvider!.counties[indexPath.row].hasArea {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegionsViewControllerStoryboardID") as! RegionsViewController
             vc.selectedCountry = dataProvider?.getCountry(dataProvider!.counties[indexPath.row].name)
             vc.delegate = self
-//            vc.dataProvider = dataProvider
             navigationController?.pushViewController(vc, animated: true)
         } else {
-            let cell = tableView.cellForRow(at: indexPath) as! MainTableViewCell
-            dataProvider?.counties[indexPath.row].toggleDownloading()
-            cell.toggleDownloanProgressView()
-        }
+            if !dataProvider!.counties[indexPath.row].isInQueue && !dataProvider!.counties[indexPath.row].isDownloaded && !dataProvider!.counties[indexPath.row].isDownloading {
+                let cell = tableView.cellForRow(at: indexPath) as! MainTableViewCell
+                dataProvider?.counties[indexPath.row].toggleDownloading()
+                cell.toggleDownloanProgressView()
+                
+                if downnload == nil {
+                    downloadQueue.append(dataProvider!.counties[indexPath.row])
+                    downloadSequentially()
+                } else {
+                    downloadQueue.append(dataProvider!.counties[indexPath.row])
+                    print(#function)
+                    print(downloadQueue.count)
+                }
+            }
 
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

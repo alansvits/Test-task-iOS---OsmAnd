@@ -50,8 +50,13 @@ extension RegionsViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell else { return UITableViewCell()
         }
         cell.countryNameLabel.text = selectedCountry.regions![indexPath.row].name
-        cell.downloadImageView.image = UIImage(named: "ic_custom_dowload")
-        cell.isDownloading = selectedCountry.regions![indexPath.row].isDownloading
+        if selectedCountry.regions![indexPath.row].isDownloaded {
+            cell.downloadImageView.image = UIImage(named: "ic_custom_dowload_green")
+        } else {
+            cell.downloadImageView.image = UIImage(named: "ic_custom_dowload")
+        }
+        cell.isDownloading = selectedCountry.regions![indexPath.row].isInQueue
+        cell.downloadProgressView.progress = selectedCountry.regions![indexPath.row].downloadingProgress
         return cell
     }
     
