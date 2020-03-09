@@ -18,8 +18,6 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var dataProvider: DataProvider?
-    var session: URLSession!
-    
     var downnload: DownloadRequest?
     
     var downloadQueue = [Country]()
@@ -30,8 +28,6 @@ class CountryViewController: UIViewController, UITableViewDelegate, UITableViewD
         setDataProvider()
         setMemoryProgressView()
         setFreeGbLabel()
-        
-        session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
     }
     
     func downloadSequentially() {
@@ -80,22 +76,6 @@ extension CountryViewController: RegionsViewControllerDelegate {
     }
 }
 
-extension CountryViewController: URLSessionDownloadDelegate {
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        
-    }
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        print(#function)
-        print("totalBytesExpectedToWrite")
-        print(totalBytesExpectedToWrite)
-        print("totalBytesWritten")
-        
-        print(totalBytesWritten)
-    }
-}
-
-
 //MARK: - UITableViewDelegate, UITableViewDataSource
 
 extension CountryViewController {
@@ -110,13 +90,15 @@ extension CountryViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell,
             let dataProvider = dataProvider else { return UITableViewCell() }
-        cell.countryNameLabel.text = dataProvider.counties[indexPath.row].name
+        let strName = dataProvider.counties[indexPath.row].name.components(separatedBy: "-").joined(separator: " ").capitalized
+        cell.countryNameLabel.text = strName
         cell.isDownloading = dataProvider.counties[indexPath.row].isInQueue
         cell.downloadProgressView.progress = dataProvider.counties[indexPath.row].downloadingProgress
         if dataProvider.counties[indexPath.row].hasArea {
             cell.downloadImageView.image = UIImage(named: "ic_custom_chevron")
         } else if dataProvider.counties[indexPath.row].isDownloaded {
             cell.downloadImageView.image = UIImage(named: "ic_custom_dowload_green")
+            cell.toggleDownloaded()
         } else {
             cell.downloadImageView.image = UIImage(named: "ic_custom_dowload")
         }
@@ -141,8 +123,7 @@ extension CountryViewController {
                     downloadSequentially()
                 } else {
                     downloadQueue.append(dataProvider!.counties[indexPath.row])
-                    print(#function)
-                    print(downloadQueue.count)
+
                 }
             }
 
@@ -176,7 +157,6 @@ extension CountryViewController {
         let app = UIApplication.shared
         let statusBarHeight: CGFloat = app.statusBarFrame.size.height
         let statusbarView = UIView()
-        //        statusbarView.backgroundColor = UIColor(red:1.00, green:0.53, blue:0.00, alpha:1.0)
         statusbarView.backgroundColor = UIColor(hexString: "#FF8800")
         view.addSubview(statusbarView)
         

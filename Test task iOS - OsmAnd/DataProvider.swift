@@ -8,16 +8,11 @@
 
 import Foundation
 
-class DataProvider: NSObject, URLSessionDownloadDelegate {
+class DataProvider: NSObject {
     
     let continent = "Europe"
     let regions: RootRegion
     var counties = [Country]()
-    
-    var downloadQueue = [Country]()
-    
-    let session = URLSession.shared
-    let RESTUrl = "http://download.osmand.net/download.php?standard=yes&file="
     
     init(_ data: RootRegion) {
         regions = data
@@ -65,7 +60,6 @@ class DataProvider: NSObject, URLSessionDownloadDelegate {
         for i in 0..<counties.count {
             if counties[i].name == country.name {
                 counties[i] = country
-                //                counties[i].updateRegions(country.regions!)
             }
         }
     }
@@ -77,58 +71,6 @@ class DataProvider: NSObject, URLSessionDownloadDelegate {
             }
         }
         return nil
-    }
-    
-    func addToQueue(_ country: Country) {
-        var tmp = country
-        tmp.isInQueue = true
-        updateCoutries(country)
-        downloadQueue.append(country)
-    }
-    
-    func downloadSequentially(_ countries: [Country], completion: @escaping (Country, URL?, URLResponse?, Error?) -> Void) {
-        
-        let queue = OperationQueue()
-        queue.maxConcurrentOperationCount = 1
-        let session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
-        for c in countries {
-            var tmp = c
-            queue.addOperation {
-                let semaphore = DispatchSemaphore(value: 0)
-                tmp.isDownloading = true
-                self.updateCoutries(tmp)
-                
-                session.downloadTask(with: c.url!, completionHandler: { (tempURL, response, error) in
-                    tmp.isDownloaded = true
-                    tmp.isDownloading = false
-                    tmp.isInQueue = false
-                    self.updateCoutries(tmp)
-                    completion(tmp, tempURL, response, error)
-                    semaphore.signal()
-                }).resume()
-                
-                semaphore.wait()
-            }
-        }
-    }
-    
-    //    downloadSequentially(urls) { (tempUrl, response, error) -> Void in
-    //        print("Downloaded to: \(tempUrl)")
-    //    }
-    
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        print(#function)
-        print("totalBytesExpectedToWrite")
-        print(totalBytesExpectedToWrite)
-        print("totalBytesWritten")
-        
-        print(totalBytesWritten)
-    }
-    
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        print(#function)
-        
     }
     
 }

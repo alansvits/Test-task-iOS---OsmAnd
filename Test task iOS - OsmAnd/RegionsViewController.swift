@@ -19,6 +19,8 @@ class RegionsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     weak var delegate: RegionsViewControllerDelegate?
     
+    var downloadQueue = [Area]()
+    
     var selectedCountry: Country! {
         didSet {
             selectedCountry.regions?.sort(by: { (a1, a2) -> Bool in
@@ -33,7 +35,6 @@ class RegionsViewController: UIViewController, UITableViewDelegate, UITableViewD
         title = selectedCountry?.name.capitalized
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
-
 }
 
 //MARK: - UITableViewDataSource
@@ -49,7 +50,8 @@ extension RegionsViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCellIdentifier", for: indexPath) as? MainTableViewCell else { return UITableViewCell()
         }
-        cell.countryNameLabel.text = selectedCountry.regions![indexPath.row].name
+        let strName = selectedCountry.regions![indexPath.row].name.components(separatedBy: "-").joined(separator: " ").capitalized
+        cell.countryNameLabel.text = strName
         if selectedCountry.regions![indexPath.row].isDownloaded {
             cell.downloadImageView.image = UIImage(named: "ic_custom_dowload_green")
         } else {

@@ -49,5 +49,9 @@ class MainTableViewCell: UITableViewCell {
         }
     }
     
+    func toggleDownloaded() {
+        topCountryNameLabelConstraint.constant = 11
+    }
+    
 
 }

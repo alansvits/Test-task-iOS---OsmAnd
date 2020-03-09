@@ -12,7 +12,6 @@
 		647A212C2413BFE900F2F3E9 /* region_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 647A212B2413BFE900F2F3E9 /* region_json.json */; };
 		647A212E2413C23A00F2F3E9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A212D2413C23A00F2F3E9 /* DataProvider.swift */; };
 		647A21322413E37D00F2F3E9 /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647A21312413E37D00F2F3E9 /* RegionsViewController.swift */; };
-		647ECF5B2414C1AC00D26BA1 /* MemoryProgresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */; };
 		6482744424137FD800578441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482744324137FD800578441 /* AppDelegate.swift */; };
 		6482744D24137FDE00578441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6482744C24137FDE00578441 /* Assets.xcassets */; };
 		6482745024137FDE00578441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6482744E24137FDE00578441 /* LaunchScreen.storyboard */; };
@@ -20,7 +19,7 @@
 		64830AAA2413B8E50007E048 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64830AA92413B8E50007E048 /* MainTableViewCell.swift */; };
 		64A4472B2413AD2000744EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A447292413AD2000744EB0 /* Main.storyboard */; };
 		64A4472D2413AD8D00744EB0 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4472C2413AD8D00744EB0 /* CountryViewController.swift */; };
-		64C4628E24153ED100C2B564 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C4628D24153ED100C2B564 /* NetworkManager.swift */; };
+		64CBE459241629E300789045 /* regions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 64CBE458241629E200789045 /* regions.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		647A212B2413BFE900F2F3E9 /* region_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = region_json.json; sourceTree = "<group>"; };
 		647A212D2413C23A00F2F3E9 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		647A21312413E37D00F2F3E9 /* RegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
-		647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryProgresView.swift; sourceTree = "<group>"; };
 		6482744024137FD800578441 /* Test task iOS - OsmAnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test task iOS - OsmAnd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6482744324137FD800578441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6482744C24137FDE00578441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +38,7 @@
 		64830AA92413B8E50007E048 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		64A4472A2413AD2000744EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A4472C2413AD8D00744EB0 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
-		64C4628D24153ED100C2B564 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		64CBE458241629E200789045 /* regions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = regions.xml; sourceTree = "<group>"; };
 		A1597F5BB97080F14DE36044 /* Pods-Test task iOS - OsmAnd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test task iOS - OsmAnd.debug.xcconfig"; path = "Target Support Files/Pods-Test task iOS - OsmAnd/Pods-Test task iOS - OsmAnd.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,12 +91,11 @@
 				64A447292413AD2000744EB0 /* Main.storyboard */,
 				6482744E24137FDE00578441 /* LaunchScreen.storyboard */,
 				6482745124137FDE00578441 /* Info.plist */,
+				64CBE458241629E200789045 /* regions.xml */,
 				647A212B2413BFE900F2F3E9 /* region_json.json */,
 				6482745724138BB100578441 /* Extentions.swift */,
 				647A21292413BFAD00F2F3E9 /* Helpers.swift */,
 				647A212D2413C23A00F2F3E9 /* DataProvider.swift */,
-				64C4628D24153ED100C2B564 /* NetworkManager.swift */,
-				647ECF5A2414C1AC00D26BA1 /* MemoryProgresView.swift */,
 			);
 			path = "Test task iOS - OsmAnd";
 			sourceTree = "<group>";
@@ -109,7 +106,6 @@
 				A1597F5BB97080F14DE36044 /* Pods-Test task iOS - OsmAnd.debug.xcconfig */,
 				1B48348A0330DA596BC8B1A9 /* Pods-Test task iOS - OsmAnd.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A4472B2413AD2000744EB0 /* Main.storyboard in Resources */,
+				64CBE459241629E300789045 /* regions.xml in Resources */,
 				647A212C2413BFE900F2F3E9 /* region_json.json in Resources */,
 				6482745024137FDE00578441 /* LaunchScreen.storyboard in Resources */,
 				6482744D24137FDE00578441 /* Assets.xcassets in Resources */,
@@ -211,8 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C4628E24153ED100C2B564 /* NetworkManager.swift in Sources */,
-				647ECF5B2414C1AC00D26BA1 /* MemoryProgresView.swift in Sources */,
 				647A21322413E37D00F2F3E9 /* RegionsViewController.swift in Sources */,
 				647A212E2413C23A00F2F3E9 /* DataProvider.swift in Sources */,
 				64A4472D2413AD8D00744EB0 /* CountryViewController.swift in Sources */,
